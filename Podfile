@@ -11,7 +11,7 @@ target default_app_target do
   use_frameworks!
 
   # Pods for GonativeIO
-  pod 'GoNativeCore'
+  # pod 'GoNativeCore'
   # pod 'MedianIcons'
   pod 'SSZipArchive', '~> 2.6.0'
   
