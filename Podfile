@@ -12,7 +12,7 @@ target default_app_target do
 
   # Pods for GonativeIO
   pod 'GoNativeCore'
-  pod 'MedianIcons'
+  # pod 'MedianIcons'
   pod 'SSZipArchive', '~> 2.6.0'
   
   use_plugins!
