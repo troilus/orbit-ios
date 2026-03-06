@@ -17,7 +17,17 @@ jobs:
       - name: Install CocoaPods
         run: |
           sudo gem install cocoapods
-          pod install
+      - name: Fix GitHub SSH
+        run: |
+          git config --global url."https://github.com/".insteadOf git@github.com:
+      - name: Install Pods  
+        run: |  
+          # 跳过pod install，直接使用现有的Pods目录  
+          echo "跳过CocoaPods安装，使用预编译依赖"  
+            
+          # 如果需要，可以只安装公共源依赖  
+          # sudo gem install cocoapods --no-document  
+          # pod install --repo-update
 
       - name: Show Xcode version
         run: xcodebuild -version
