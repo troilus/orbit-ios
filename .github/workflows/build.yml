@@ -17,6 +17,12 @@ jobs:
       - name: Install CocoaPods
         run: |
           sudo gem install cocoapods
+      - name: Fix GitHub SSH
+        run: |
+          git config --global url."https://github.com/".insteadOf git@github.com:
+
+      - name: Install Pods
+        run: |
           pod install
 
       - name: Show Xcode version
