@@ -2,11 +2,7 @@
 platform :ios, '15.5'
 
 source 'https://cdn.cocoapods.org/'
-<<<<<<< HEAD
-
-=======
 source 'git@github.com:gonativeio/gonative-specs.git'
->>>>>>> parent of efcd6a4 (Update Podfile)
 
 require_relative './plugins.rb'
 
